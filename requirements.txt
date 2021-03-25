@@ -1,0 +1,6 @@
+ipycytoscape
+scipy
+pandas
+numpy
+networkx
+matplotlib

@@ -18,13 +18,13 @@ Linux: .bashrc
 conda install --file requirements.txt
 
 Or run the following if you prefer manual installations
-``
+```
 conda install -c conda-forge ipycytoscape
 conda install pandas
 conda install scipy
 conda install -c anaconda networkx 
 conda install matplotlib
-``
+```
 
 ## Launch 
 
@@ -36,7 +36,12 @@ open ``main.ipynb``
 ## Utils
 use `dd` to delete rows
 
+## Reference
+Tong Liu, Paolo Coletti, Anton Dignös, Johann Gamper and Maurizio Murgia
+Correlation graph analytics for stock time series data
+EDBT 2021 - NICOSIA
 
+Web demo: http://ismard.inf.unibz.it/mst/
 
 
 License :copyright:

@@ -24,6 +24,7 @@ conda install pandas
 conda install scipy
 conda install -c anaconda networkx 
 conda install matplotlib
+conda install seaborn
 ```
 
 ## Launch 

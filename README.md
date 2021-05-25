@@ -3,10 +3,11 @@
 
 ## Install anaconda
 
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
+For example (MacOS):
+- wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
 bash ~/miniconda.sh -b -p $HOME/miniconda
 
-For more information, see
+- For more information, see
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html
 
 Then, configure environment paths.

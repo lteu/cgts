@@ -11,8 +11,8 @@ to understand whether it is reliable to signal important market events.
 Launch ``heatmap.py`` to compute MSTs features
 
 examples:
-- $: python3 heatmap.py --csv ../data/Ita-2019-2020-July_classified_small.csv  --out out/rlt.json
-- $: python3 heatmap.py --csv ../data/Ita-2019-2020-July_classified_small.csv  --presenceTreshold 0.8 --overlapThreshold 0.8  --ifIncludeNegativeEdges false  --winSizeStep 3 --edgeThreshold 0.1 --out out/tmp.json
+- $: python3 heatmap.py --csv ../data/sample.csv  --out out/rlt.json
+- $: python3 heatmap.py --csv ../data/sample.csv  --presenceTreshold 0.8 --overlapThreshold 0.8  --ifIncludeNegativeEdges false  --winSizeStep 3 --edgeThreshold 0.1 --out out/tmp.json
 
 ## Visualization
 
@@ -26,7 +26,7 @@ Update variable ``inputFile`` for file location and variable ``topic`` for the t
 Launch ``fastHeatmap.py``. Currently it only supports first degree score (degree distribution).
 
 example 
-$: python3 fastHeatmap.py --csv ../data/Ita-2019-2020-July_classified_small.csv  --out out/rlt.json
+$: python3 fastHeatmap.py --csv ../data/sample.csv  --out out/rlt.json
 
 
 ### Note, compile the binary version of heatmap computation if the binary package is broken

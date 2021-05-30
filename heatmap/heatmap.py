@@ -3,8 +3,8 @@
 Baseline approach to computing a heatmap.
 Functions offered by pandas are used.
 
-python3 heatmap.py --csv ../data/Ita-2019-2020-July_classified_small.csv  --out out/rlt.json
-# python3 heatmap.py --csv ../data/Ita-2019-2020-July_classified_small.csv  --presenceTreshold 0.8 --overlapThreshold 0.8  --ifIncludeNegativeEdges false  --winSizeStep 3 --edgeThreshold 0.1 --out out/tmp.json
+python3 heatmap.py --csv ../data/sample.csv  --out out/rlt.json
+# python3 heatmap.py --csv ../data/sample.csv  --presenceTreshold 0.8 --overlapThreshold 0.8  --ifIncludeNegativeEdges false  --winSizeStep 3 --edgeThreshold 0.1 --out out/tmp.json
 
 
 Mandatory parameters:

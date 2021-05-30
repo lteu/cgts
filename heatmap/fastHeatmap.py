@@ -6,9 +6,9 @@ Mandatory:
 --out
 
 
-python3 fastHeatmap.py --csv ../data/Ita-2019-2020-July_classified_small.csv  --out out/rlt.json
+python3 fastHeatmap.py --csv ../data/sample.csv  --out out/rlt.json
 
-python3 fastHeatmap.py --csv ../data/Ita-2019-2020-July_classified_small.csv --winSizeStep 10 --out out/rlt.json
+python3 fastHeatmap.py --csv ../data/sample.csv --winSizeStep 10 --out out/rlt.json
 
 
 """

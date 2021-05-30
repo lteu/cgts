@@ -156,9 +156,6 @@ def arrToNX(arr):
 		G.add_edge(x,y)
 	return G
 
-def toJson2(corr):
-	print('in')
-	return 1,2
 def toJson(corr, arr, names , trim=None ):
 	orig_corr = corr.values.tolist()
 	edges = []

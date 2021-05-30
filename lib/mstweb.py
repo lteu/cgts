@@ -1,18 +1,11 @@
 """
 mst from inout timeseries data
-example: 
-python3 mstweb.py --csv demo_data/ita2001_2016.csv --ifCompleteGraph False
 
+calls example: 
+python3 mstweb.py --csv demo_data/ita2001_2016.csv --ifCompleteGraph False
 python3 mstweb.py --csv demo_data/ita2010_2020.csv
 python3 mstweb.py --csv demo_data/ita2010_2020.csv --ifClassGraph True
-
-
-python3 mstweb.py --csv demo_data/ita2001_2016_classified.csv --overlapThreshold -123
-
-
-python3 mstweb.py --csv demo_data/longPaolo.csv
-
-
+python3 mstweb.py --csv demo_data/ita2001_2016_classified.csv --overlapThreshold -0.6
 python3 mstweb.py --csv demo_data/ita2001_2016.csv --observedTickers  G.MI,ISP.MI,UCG.MI,FCA.MI,F.MI,ENI.MI,ENEL.MI,TIT.MI,BMED.MI,MB.MI
 
 # @author: toliu [at] unibz.it
@@ -96,10 +89,9 @@ def analysis(edges,node_dic,class_dic={}):
 
 	mod_score = -2
 
-	aTestNodeName = node_dic[list(node_dic.keys())[0]]
-	
-
-	if bool(class_dic.keys()) and aTestNodeName in class_dic:
+	# check if it makes sense to calculate the modularity score
+	aTestNodeName = "" if len(list(node_dic.keys())) == 0 else node_dic[list(node_dic.keys())[0]]
+	if bool(class_dic.keys()) and aTestNodeName !="" and aTestNodeName in class_dic:
 
 		inv_dic = {}
 		nodelist = G.nodes()
